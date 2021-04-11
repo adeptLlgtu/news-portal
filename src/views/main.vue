@@ -123,6 +123,7 @@
             this.createMoneyStat()
             this.createDate()
             this.createMainNews()
+            
 
 
         }
