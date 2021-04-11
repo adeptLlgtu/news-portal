@@ -1,0 +1,43 @@
+.header{
+  width: calc(54.5625rem - 2rem);
+  margin: 0 auto;
+  background: #FFFFFF;
+  height: 3.875rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  &-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 7rem;
+    img{
+      width: 2.6875rem;
+    }
+    p{
+      color: #2B2B2B;
+      font-weight: 600;
+      margin-left: 1rem;
+      span{
+        color: #00C2FF;
+      }
+    }
+  }
+  .active{
+    color: #00C2FF;
+    text-decoration: underline;
+  }
+  &-links{
+    width: 18rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__item{
+      font-weight: 600;
+      color: #2B2B2B;
+      text-decoration: none;
+    }
+  }
+
+}
