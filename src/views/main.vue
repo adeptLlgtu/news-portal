@@ -86,7 +86,8 @@
                     case 11: fMonth="декабря"; break;
                 }
                 cursBlock.insertAdjacentHTML('beforeend', '<p class="curs-date">'+Day+" "+fMonth+" "+Year+" "+"года"+'</p>')
-            }
+            },
+
         },
         mounted() {
             document.title = 'Главная'

@@ -29,15 +29,23 @@
     text-decoration: underline;
   }
   &-links{
-    width: 18rem;
+    width: 30rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
     &__item{
       font-weight: 600;
       color: #2B2B2B;
       text-decoration: none;
+      margin: 0 0.5rem;
     }
   }
+}
+.link-line{
+  height: 2.5rem;
+  width: 0.1rem;
+  background: #c3c3c3;
+  margin: 0 1rem;
+  border-radius: 10em;
 
 }

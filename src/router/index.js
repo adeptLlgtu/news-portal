@@ -4,6 +4,7 @@ import auth from '../views/auth'
 import registration from '../views/registration'
 import main from '../views/main'
 import login from '../views/login'
+import createNews from "../views/createNews";
 
 Vue.use(VueRouter)
 
@@ -30,6 +31,12 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: login
+
+  },
+  {
+    path: '/create',
+    name: 'create',
+    component: createNews
 
   },
 

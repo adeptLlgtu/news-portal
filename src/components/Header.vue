@@ -5,9 +5,12 @@
            <p>ЛИПЕЦК | <span>NEWS</span></p>
        </router-link>
         <div class="header-links">
-            <router-link to="/main" class="header-links__item active">Главная</router-link>
-            <router-link to="/main" class="header-links__item">Новости</router-link>
-            <router-link to="/main" class="header-links__item">Видео</router-link>
+            <router-link id="main" to="/main" class="header-links__item" active-class="active">Главная</router-link>
+            <router-link id="news" to="/news" class="header-links__item" active-class="active">Новости</router-link>
+            <router-link id="video" to="/video" class="header-links__item" active-class="active">Видео</router-link>
+            <div class="link-line"></div>
+            <router-link id="create" to="/create" class="header-links__item" active-class="active">Добавить новость</router-link>
+            <router-link id="admin" to="/admin-panel" class="header-links__item" active-class="active">Администрирование</router-link>
         </div>
 
 
@@ -30,7 +33,26 @@
                 header_logo
             };
         },
+        methods:{
+            permission(){
+                return localStorage.permission
+            },
+            createHeader(){
+                const permission = this.permission()
+                let main = document.getElementById('main')
+                let news = document.getElementById('news')
+                let video = document.getElementById('video')
+                let create = document.getElementById('create')
+                let admin = document.getElementById('admin')
+                if (permission==='9'){
+                    admin.remove()
+                }
+            }
+        },
+        mounted() {
+            this.createHeader()
 
+        }
 
 
     }
