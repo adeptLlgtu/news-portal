@@ -16,9 +16,11 @@
     justify-content: space-between;
 
 
+
     img{
       cursor: pointer;
       transition: 0.2s;
+      filter: brightness(200%);
       &:hover{
         transition: 0.2s;
         transform: scale(1.1);
@@ -38,6 +40,7 @@
       font-size: 1rem;
       color: #767676;
       margin-bottom: 0.3rem;
+      filter: brightness(200%);
     }
   }
 

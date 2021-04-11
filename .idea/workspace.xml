@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb1e6bc8-fb30-48f4-b291-a4a3190c0641" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/auth.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/auth.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/main.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/registration.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/EUR.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/USD.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/About.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/main.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +30,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../glkurs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DNS\Desktop\OSPanel\domains\news-portal\public" />
+      <recent name="C:\Users\DNS\Desktop\OSPanel\domains\news-portal\src\assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\DNS\Desktop\OSPanel\domains\news\src\assets" />
     </key>
@@ -55,6 +54,7 @@
       <workItem from="1617448459408" duration="33000" />
       <workItem from="1617448507907" duration="14162000" />
       <workItem from="1617775173534" duration="34000" />
+      <workItem from="1618137550378" duration="4278000" />
     </task>
     <servers />
   </component>

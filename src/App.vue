@@ -17,6 +17,7 @@
   import './assets/styles/footer.scss'
   import './assets/styles/auth.scss'
   import './assets/styles/header.scss'
+  import './assets/styles/main.scss'
 
   import left_bg from './assets/background-left.png'
   import right_bg from './assets/background-right.png'
