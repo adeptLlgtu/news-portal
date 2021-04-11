@@ -11,8 +11,11 @@
                             <img :src="eur" alt="">
                         </div>
                     </div>
-
                 </div>
+                <h2 class="main-page__section-title">Важные новости</h2>
+                <div class="main-news__container"></div>
+                <h2 class="main-page__section-title">Новости недели</h2>
+                <div class="all-news__container"></div>
             </div>
         </div>
 
@@ -87,6 +90,31 @@
                 }
                 cursBlock.insertAdjacentHTML('beforeend', '<p class="curs-date">'+Day+" "+fMonth+" "+Year+" "+"года"+'</p>')
             },
+            getNews(){
+                let request = new XMLHttpRequest();
+                request.open('GET', "http://API-news.loc/api/from:news", false);
+                request.send()
+                if (request.status === 200) {
+                    let subjectsRequest = JSON.parse(request.response)
+                    return(subjectsRequest)
+                } else {
+                    console.log('Error')
+                }
+            },
+            createMainNews(){
+                let newsData = this.getNews()
+                let mainNewsBlock = document.querySelector('.main-news__container')
+                let allNewsContainer = document.querySelector('.all-news__container')
+                for (let i=0; i<newsData.length; i++){
+                    if (newsData[i].famous === true){
+                        mainNewsBlock.insertAdjacentHTML('beforeend', '<p class="main-news__item">'+newsData[i].title+'</p>')
+                    }
+                    else{
+                        allNewsContainer.insertAdjacentHTML('beforeend', '<div class="all-news__container-item"><img src="'+newsData[i].img_source+'" alt=""><p class="news-title">'+newsData[i].title+'</p><p class="news-date">'+newsData[i].public_date+'</p></div>')
+                    }
+                }
+
+            }
 
         },
         mounted() {
@@ -94,7 +122,7 @@
             console.log(this.getMoney())
             this.createMoneyStat()
             this.createDate()
-
+            this.createMainNews()
 
 
         }

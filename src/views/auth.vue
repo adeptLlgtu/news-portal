@@ -22,7 +22,7 @@
         },
         data: function () {
             return {
-                lip_logo
+                lip_logo,
             };
         },
 
@@ -36,6 +36,7 @@
         },
 
         mounted() {
+            document.title = 'Авторизация'
             this.checkHeader()
         }
 

@@ -25,7 +25,7 @@
                         <label for="age">Возраст</label>
                         <input name="age" min="14" max="120" id="age" type="number">
                     </div>
-                    <p id="description"><span>*</span> - обязательно для заполнения</p>
+                    <p id="description-reg"><span>*</span> - обязательно для заполнения</p>
                     <div class="button-container">
                         <button type="submit">Регистрация</button>
                     </div>
@@ -75,6 +75,7 @@
                 }
             },
             mounted() {
+                document.title = 'Регистрация'
                 this.registration()
                 this.checkHeader()
             }
