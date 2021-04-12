@@ -97,6 +97,7 @@
             sendBtn.onclick = async (e) => {
                 e.preventDefault();
                 let formData = new FormData(form)
+                formData.append('author_id', localStorage.id)
                 // eslint-disable-next-line
                 let response = await fetch('http://API-news.loc/api/createNews', {
                     method: 'POST',

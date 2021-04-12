@@ -6,10 +6,10 @@
        </router-link>
         <div class="header-links">
             <router-link id="main" to="/main" class="header-links__item" active-class="active">Главная</router-link>
-            <router-link id="news" to="/news" class="header-links__item" active-class="active">Новости</router-link>
             <router-link id="video" to="/video" class="header-links__item" active-class="active">Видео</router-link>
             <div class="link-line"></div>
             <router-link id="create" to="/create" class="header-links__item" active-class="active">Добавить новость</router-link>
+            <router-link id="magazine" to="/magazine" class="header-links__item" active-class="active">Журнал</router-link>
             <router-link id="admin" to="/admin-panel" class="header-links__item" active-class="active">Администрирование</router-link>
         </div>
 

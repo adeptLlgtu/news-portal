@@ -26,7 +26,7 @@
   }
   .active{
     color: #00C2FF;
-    text-decoration: underline;
+
   }
   &-links{
     width: 30rem;
@@ -48,5 +48,10 @@
   border-radius: 4px;
   margin: 0 1rem;
 
+
+}
+
+form{
+  padding: 4rem 1rem 1rem 1rem;
 
 }

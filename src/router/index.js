@@ -5,6 +5,7 @@ import registration from '../views/registration'
 import main from '../views/main'
 import login from '../views/login'
 import createNews from "../views/createNews";
+import magazine from "../views/magazine"
 
 Vue.use(VueRouter)
 
@@ -37,6 +38,12 @@ const routes = [
     path: '/create',
     name: 'create',
     component: createNews
+
+  },
+  {
+    path: '/magazine',
+    name: 'magazine',
+    component: magazine
 
   },
 
