@@ -110,11 +110,34 @@
                         mainNewsBlock.insertAdjacentHTML('beforeend', '<p class="main-news__item">'+newsData[i].title+'</p>')
                     }
                     else{
-                        allNewsContainer.insertAdjacentHTML('beforeend', '<div class="all-news__container-item"><img src="'+newsData[i].img_source+'" alt=""><p class="news-title">'+newsData[i].title+'</p><p class="news-date">'+newsData[i].public_date+'</p></div>')
+                        allNewsContainer.insertAdjacentHTML('beforeend', '<div class="all-news__container-item"><img src="'+newsData[i].img_source+'" alt=""><p class="news-title">'+newsData[i].title+'</p><p class="news-date">'+newsData[i].public_date+'</p><div class="news-background"><div class="news-full__container"><div class="close-full__news-btn"><div class="close-full__news-btn__item"></div><div class="close-full__news-btn__item"></div></div></div></div></div>')
                     }
                 }
+            },
+            getFullNews(){
+                let openFlag = false
+                let newsItem = document.querySelectorAll('.all-news__container-item')
+                let newsItemBackground = document.querySelectorAll('.news-background')
+                for (let i=0; i<newsItem.length; i++){
+                    newsItem[i].onclick = () =>{
+                        newsItemBackground[i].style.transform = 'scale(1)'
+                    }
 
+
+                }
+            },
+            closeFullNews(){
+                let newsItemBackground = document.querySelectorAll('.news-background')
+                let closeFullNewsBtn = document.querySelectorAll('.close-full__news-btn')
+                for (let i=0; i<closeFullNewsBtn.length; i++){
+                    closeFullNewsBtn[i].onclick = () =>{
+                       console.log(newsItemBackground[i].style.transform)
+                        newsItemBackground[i].style.transform = 'scale(0)'
+                    }
+
+                }
             }
+
 
         },
         mounted() {
@@ -123,6 +146,8 @@
             this.createMoneyStat()
             this.createDate()
             this.createMainNews()
+            this.getFullNews()
+            this.closeFullNews()
             
 
 
