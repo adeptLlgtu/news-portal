@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb1e6bc8-fb30-48f4-b291-a4a3190c0641" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/magazine.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/magazine.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/all_news.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main_news.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/create.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/create.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/createNews.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/createNews.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/magazine.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/magazine.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/magazine.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/magazine.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/main.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +29,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -59,6 +57,11 @@
       <workItem from="1618154649015" duration="3788000" />
       <workItem from="1618167097688" duration="6786000" />
       <workItem from="1618207511222" duration="19199000" />
+      <workItem from="1618392214236" duration="32000" />
+      <workItem from="1618657330327" duration="4513000" />
+      <workItem from="1618747168968" duration="6231000" />
+      <workItem from="1618775158603" duration="141000" />
+      <workItem from="1618810764120" duration="616000" />
     </task>
     <servers />
   </component>
@@ -70,9 +73,10 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="719" y="345" key="#com.intellij.fileTypes.FileTypeChooser/0.30.1920.1050@0.30.1920.1050" timestamp="1618216651863" />
-    <state x="740" y="310" key="FileChooserDialogImpl" timestamp="1617775205356">
+    <state x="740" y="310" key="FileChooserDialogImpl" timestamp="1618775298437">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
-    <state x="740" y="310" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1617775205356" />
+    <state x="740" y="310" key="FileChooserDialogImpl/0.-1050.1920.1050/0.30.1920.1050@0.30.1920.1050" timestamp="1618775298437" />
+    <state x="740" y="310" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1618392243910" />
   </component>
 </project>

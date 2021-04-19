@@ -1,14 +1,5 @@
 <template>
     <div class="main">
-        <div class="news-background">
-            <div class="news-full__container">
-                <div class="close-full__news-btn">
-                    <div class="close-full__news-btn__item"></div>
-                    <div class="close-full__news-btn__item"></div>
-                </div>
-                <div class="generate-full-news__container"></div>
-            </div>
-        </div>
         <div class="scroll-container">
             <div class="main-container">
                 <div class="main-container__curs">
@@ -21,10 +12,9 @@
                         </div>
                     </div>
                 </div>
-                <h2 class="main-page__section-title">Важные новости</h2>
-                <div class="main-news__container"></div>
+                <MainNews></MainNews>
                 <h2 class="main-page__section-title">Новости недели</h2>
-                <div class="all-news__container"></div>
+                <AllNews></AllNews>
             </div>
         </div>
 
@@ -36,17 +26,20 @@
 
     import usd from '../assets/USD.svg'
     import eur from '../assets/EUR.svg'
+    import MainNews from '../components/main_news'
+    import AllNews from '../components/all_news'
 
     export default {
         name: 'Main',
         title: 'Главная',
         components: {
-
+            MainNews, AllNews
         },
         data: function () {
             return {
-                usd, eur
-
+                usd, eur,
+                news_data:[],
+                news_id: -1,
             };
         },
         methods:{
@@ -110,76 +103,14 @@
                     console.log('Error')
                 }
             },
-            createMainNews(){
-                let newsData = this.getNews()
-                let mainNewsBlock = document.querySelector('.main-news__container')
-                let allNewsContainer = document.querySelector('.all-news__container')
-                for (let i=0; i<newsData.length; i++){
-                    if (newsData[i].famous === true){
-                        mainNewsBlock.insertAdjacentHTML('beforeend', '<p id="'+i+'" class="main-news__item">'+newsData[i].title+'</p>')
-                    }
-                    else{
-                        allNewsContainer.insertAdjacentHTML('beforeend', '<div id="'+i+'" class="all-news__container-item"><img src="'+newsData[i].img_source+'" alt=""><p class="news-title">'+newsData[i].title+'</p><p class="news-date">'+newsData[i].public_date+'</p></div>')
-                    }
-                }
-            },
-            getFullNews(){
-                let newsItem = document.querySelectorAll('.all-news__container-item')
-                let newsBackground = document.querySelector('.news-background')
-                let generateFullNewsContainer = document.querySelector('.generate-full-news__container')
-                let mainNewsItems = document.querySelectorAll('.main-news__item')
-                let newsData = this.getNews()
-                for (let i=0; i<newsItem.length; i++){
-                    newsItem[i].onclick = () =>{
-                        newsBackground.style.top = '0%'
-                        generateFullNewsContainer.insertAdjacentHTML('beforeend', '<div class="top-info-block"><p class="top-info-block__text">'+newsData[newsItem[i].id].public_date+'</p><p class="top-info-block__text">'+newsData[newsItem[i].id].author+'</p></div><p class="full-news__title">'+newsData[newsItem[i].id].title+'</p><img class="full-news__img" src="'+newsData[newsItem[i].id].img_source+'" alt=""><p class="full-news__description">'+newsData[newsItem[i].id].description+'</p>')
-                    }
-                }
-                for (let i=0; i<mainNewsItems.length; i++){
-                    mainNewsItems[i].onclick = () =>{
-                        newsBackground.style.top = '0%'
-                        generateFullNewsContainer.insertAdjacentHTML('beforeend', '<div class="top-info-block"><p class="top-info-block__text">'+newsData[mainNewsItems[i].id].public_date+'</p><p class="top-info-block__text">'+newsData[mainNewsItems[i].id].author+'</p></div><p class="full-news__title">'+newsData[mainNewsItems[i].id].title+'</p><img class="full-news__img" src="'+newsData[mainNewsItems[i].id].img_source+'" alt=""><p class="full-news__description">'+newsData[mainNewsItems[i].id].description+'</p>')
-                    }
-                }
-            },
-            closeFullNews(){
-                let newsBackground = document.querySelector('.news-background')
-                let closeBtnFullNews = document.querySelector('.close-full__news-btn')
-                let generateFullNewsContainer = document.querySelector('.generate-full-news__container')
-
-                closeBtnFullNews.onclick = () =>{
-                    newsBackground.style.top = '-120%'
-                    generateFullNewsContainer.innerHTML = ''
-
-                }
-
-            }
-
-
-
-
+        },
+        created() {
 
         },
         mounted() {
             document.title = 'Главная'
-            console.log(this.getMoney())
             this.createMoneyStat()
             this.createDate()
-            this.createMainNews()
-            this.getFullNews()
-            this.closeFullNews()
-
-
-
-
-            
-
-
         }
-
-
-
     }
-
-
 </script>
